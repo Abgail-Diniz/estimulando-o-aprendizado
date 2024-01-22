@@ -1,0 +1,50 @@
+section#principal{
+    overflow-y: scroll ;
+    background: url(../assets/back-sobre.jpg) no-repeat;
+    background-size: cover;
+}
+section#principal main{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+
+}
+section#principal main h1{
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+section#principal main div {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+section#principal main div p{
+    width: 95vw;
+    margin: 0 3%;
+    font-size: medium;
+    line-height: 30px;
+    text-align: justify;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: #1e8be4b7 ;
+    
+}
+@media (max-width: 767px) {
+    section#principal{
+        background: url(../assets/back-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    section#principal main h1{
+        font-size: 15px;
+    }
+
+    section#principal main div p{
+        width: 95vw;
+        margin: 0 0.5%;
+        font-size: small;
+        line-height: 18px;
+    }
+}

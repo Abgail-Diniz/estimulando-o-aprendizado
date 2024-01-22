@@ -1,0 +1,44 @@
+section#principal{
+    background: url(../assets/back-contato.jpg) no-repeat;
+    background-size: cover;
+}
+main div#redes {
+    width: 80vw;
+    height: 90vh;
+    margin-left: 5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 0px;
+    background-color: #1e8be496;
+}
+
+div#redes h3{
+    margin-left: 20px;
+}
+
+div#redes a{
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+div#redes span{
+    color: #fff;
+    padding: 0 0 10% 0;
+}
+
+@media (max-width: 767px){
+    section#principal{
+        background: url(../assets/back-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
+    div#redes h1{
+        font-size: 17px;
+    }
+    
+    div#redes h3{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+}

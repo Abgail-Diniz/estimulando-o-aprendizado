@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,200&family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./style-jogo.css">
+        <script src="../index.js"></script>
+        <title>Praticando</title>
+    </head>
+    <body>
+        <section id="principal">
+            <header id="cabecalho">
+                <img src="../assets/logo.png" alt="logo">
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="../html/sobre.html">Sobre</a>
+                    <a href="../html/contato.html">Contato</a>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Realize o cálculo</h1>
+                
+                <div id="informacao">
+                    <p>Nível Atual: <span id="nivelAtual"></span></p>
+                    <p>Contagem de Acertos: <span id="contagemAcertos"></span></p>
+                    <p>Contagem de Erros: <span id="contagemErros"></span></p>
+                    <p>Tentativas Restantes: <span id="tentativasRestantes"></span></p>
+                </div>
+
+                <div id="valores">
+                    <p><span id="opcaoUm"></span></p>
+                    <p><span id="valorDaURL"></span></p>
+                    <p><span id="opcaoDois"></span></p>
+                    
+                </div>
+               
+                <div id="envio">
+                    <!-- Adicionar input para a resposta do usuário -->
+                    <input type="text" id="respostaUsuario" placeholder="Insira sua resposta" onkeydown="verificarRespostaComEnter(event)">
+                    <button onclick="verificarResposta()">Verificar</button>
+                    <!-- Exibir se a resposta está correta ou incorreta -->
+                    <p id="resultado"></p>
+                </div>
+            </main>
+        </section>
+    </body>
+</html>

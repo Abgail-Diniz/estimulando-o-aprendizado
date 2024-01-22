@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+section#principal {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background: url(./assets/back.jpg)  no-repeat ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+section#principal header#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    max-height: 7%;
+    padding: 8px;
+    margin: 5px;
+}
+
+section#principal header#cabecalho img {
+    height: 30px;
+}
+
+section#principal header#cabecalho nav {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 0 40px;
+}
+
+section#principal header#cabecalho nav a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2px;
+    color: white;
+}
+
+section#principal header#cabecalho nav a:hover{
+    border-bottom: 2px solid #1e8be4 ;
+}
+section#principal main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#principal main h1 {
+    font-size: 30px;
+    margin-bottom: 5%;
+
+}
+
+section#principal main div#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0  40px 0;
+    gap: 50px;
+
+}
+
+section#principal main div#menu div.item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+section#principal main div#menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 30px;
+    border: 3px solid #fff;
+    border-radius: 5%;
+    background-color: #22a9d64f;
+}
+
+section#principal main div#menu div.item a[href='./html/jogo.html?valor=3'] {
+    padding:  30px 10px ;
+}
+
+section#principal main div#menu a:hover{
+    background-color: transparent;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Media Query para telas menores, como celulares */
+@media (max-width: 767px) {
+    section#principal{
+        background: url(./assets/back-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
+    section#principal header#cabecalho img {
+        display: none;
+    }
+    section#principal header#cabecalho {
+        flex-direction: column; /* Alterando a direção do flex para empilhar os itens verticalmente */
+        align-items: center; /* Centralizando os itens na horizontal */
+        max-height: none; /* Removendo a altura máxima */
+    }
+
+    section#principal header#cabecalho nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px; /* Ajustando a margem superior */
+    }
+
+    section#principal header#cabecalho nav a {
+        font-size: 15px;
+        margin-bottom: 10px; /* Adicionando espaçamento entre os links */
+    }
+
+    section#principal main {
+        margin: 0 5px;
+        height: auto; /* Altura automática para ajustar ao conteúdo */
+    }
+
+    section#principal main h1 {
+        font-size: 14px;
+        margin-top: 5px; /* Ajustando a margem superior */
+        text-align: center; /* Centralizando o texto */
+    }
+
+    section#principal main div#menu {
+        margin: 0 20px; /* Ajustando a margem */
+        width: 100%; /* Largura total */
+        gap: 1px;
+        
+    }
+
+    section#principal main div#menu div.item {
+        flex-direction: column;
+        width: 80%; /* Largura total */
+
+    }
+    
+    section#principal main div#menu a {
+        margin: 10px 0;
+        padding: 10px; /* Reduzindo o padding */
+        width: 80%;
+        font-size: 18px; /* Reduzindo o tamanho da fonte */
+        text-align: center;
+    }
+    section#principal main div#menu div.item a[href='./html/jogo.html?valor=3'] {
+        padding:  10px 10px ;
+    }
+}
